@@ -16,9 +16,9 @@ public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
-    @GetMapping // Obtener todos los clientes
-    public List<Cliente> getClientes() {
-        return clienteService.getAllClientes();
+    @GetMapping 
+    public List<Cliente> getCliente() {
+        return clienteService.getAllCliente();
     }
 
     @PostMapping // Crear un nuevo cliente
